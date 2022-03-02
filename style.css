@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@200;300;400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: rgb(110, 82, 82);
+}
+h1 h2 h3 h4 h5 {
+  color: rgb(32, 30, 30);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/***************
+header
+***************/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h4 {
+  color: lightgrey;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+header h1 {
+  font-size: 10rem;
+  font-weight: 300;
+  color: white;
+}
+header hr {
+  width: 50%;
+  height: 1px;
+  background: lightgrey;
+  border: none;
+  margin: 60px auto 0 auto;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+/***************
+dveKolone
+***************/
+.dveKolone {
+  text-align: center;
+  padding: 100px 0;
+  background: lightgrey;
+}
+.dveKolone img {
+  width: 100%;
+  display: block;
+}
+.dveKolone .container {
+  display: flex;
+  justify-content: space-between;
+}
+.dveKolone .container article {
+  flex: 0 0 48%;
+}
+.dveKolone .container article .text {
+  background: white;
+  padding: 50px;
+}
+.dveKolone h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+.dveKolone h5 {
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.dveKolone hr {
+  width: 50%;
+  height: 1px;
+  background: lightgrey;
+  border: none;
+  margin: 20px auto 0 auto;
+}
+.dveKolone p {
+  font-size: 1.1rem;
+  padding: 30px 0;
+}
+button {
+  padding: 15px 30px;
+  background: white;
+  border: 2px solid coral;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+button:hover {
+  background: lightgrey;
+  cursor: pointer;
+  transition-duration: 4s;
+}
+/***************
+cta
+***************/
+.cta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/header.jpg);
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cta h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.cta h5 {
+  color: lightgrey;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.cta hr {
+  width: 50%;
+  height: 1px;
+  background: lightgrey;
+  border: none;
+  margin: 30px auto;
+}
+/***************
+galerija
+***************/
+.galerija {
+  text-align: center;
+  padding: 100px 0;
+  background: lightgrey;
+}
+.galerija h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.galerija h5 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.galerija hr {
+  width: 30%;
+  height: 1px;
+  background: rgb(204, 10, 10);
+  border: none;
+  margin: 30px auto;
+}
+.galerija .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.galerija img {
+  width: 100%;
+  display: block;
+}
+.galerija .container div {
+  flex: 0 0 47%;
+  border: 20px solid white;
+  border-radius: 3px;
+  margin-bottom: 100px;
+}
+/***************
+responsive
+***************/
+@media (max-width: 760px) {
+  header {
+    text-align: center;
+    height: 60vh;
+  }
+  header h1 {
+    font-size: 6rem;
+    line-height: 1;
+  }
+  .dveKolone .container article {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+  .galerija .container div {
+    flex: 0 0 100%;
+    margin-bottom: 50px;
+  }
+  .dveKolone .container article:last-child,
+  .galerija .container div:last-child {
+    margin-bottom: 0;
+  }
+}
